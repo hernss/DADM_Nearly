@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_navgraph"
+    app:startDestination="@id/customerMainFragment">
+
+    <fragment
+        android:id="@+id/customerMainFragment"
+        android:name="com.utn.nearly.fragments.CustomerMainFragment"
+        android:label="fragment_customer_main"
+        tools:layout="@layout/fragment_customer_main" >
+        <action
+            android:id="@+id/action_customerMainFragment_to_customerSelectedShopArticlesFragment"
+            app:destination="@id/customerSelectedShopArticlesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerShopBagFragment"
+        android:name="com.utn.nearly.fragments.CustomerShopBagFragment"
+        android:label="fragment_customer_shop_bag"
+        tools:layout="@layout/fragment_customer_shop_bag" >
+        <argument
+            android:name="pedido"
+            app:argType="com.utn.nearly.entities.Pedido" />
+    </fragment>
+    <fragment
+        android:id="@+id/customerSelectedShopArticlesFragment"
+        android:name="com.utn.nearly.fragments.CustomerSelectedShopArticlesFragment"
+        android:label="fragment_customer_selected_shop_articles"
+        tools:layout="@layout/fragment_customer_selected_shop_articles" >
+        <action
+            android:id="@+id/action_customerSelectedShopArticlesFragment_to_customerShopBagFragment"
+            app:destination="@id/customerShopBagFragment" />
+        <argument
+            android:name="shopID"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Nearly</string>
+    <string name="loginFragment_btnLoginText">Login</string>
+    <string name="loginFragment_txtUsernameHint">Username</string>
+    <string name="loginFragment_txtPasswordHint">Password</string>
+    <string name="loginFragment_txtNotUserYet">Not user yet? Create an account</string>
+    <string name="newAccountFragment_titleUserTypeRadioGroup">Select account type:</string>
+    <string name="newAccountFragment_customerTypeText">I am a customer</string>
+    <string name="newAccountFragment_shopTypeText">I am a shop</string>
+    <string name="newAccountFragment_deliveryTypeText">I am a delivery man</string>
+    <string name="newAccountFragment_txtNameHint">Name:</string>
+    <string name="newAccountFragment_txtLastNameHint">Surname:</string>
+    <string name="newAccountFragment_txtEmailHint">Email:</string>
+    <string name="newAccountFragment_txtPasswordHint">Password:</string>
+    <string name="newAccountFragment_btnNextText">Next</string>
+    <string name="loginFragment_loginErrorText">Login fail for user</string>
+    <string name="newAccountFragment_invalidEmailText">Invalid email</string>
+    <string name="newAccountFragment_invalidPasswordText">Invalid Password</string>
+    <string name="newProductFragement_ProductNameHint">Product name</string>
+    <string name="newProductFragement_ProductDescriptionHint">Product description</string>
+    <string name="newProductFragement_ProductPriceHint">Product price</string>
+    <string name="newProductFragement_ProductStateHint">Is Active?</string>
+    <string name="newProductFragement_ProductAddButtunText">Add</string>
+    <string name="newAccountFragment_txtShopNameHint">Shop name</string>
+    <string name="newAccountFragment_txtShopAddress">Shop Address</string>
+    <string name="detailProductFragment_updateButtonText">Update</string>
+    <string name="shopBagFragment_AcceptButton">Done!</string>
+    <string name="newAccountFragment_txtAddressHint">Address</string>
+    <string name="newAccountFragment_fieldsEmpty">Fields can\'t be empty</string>
+    <string name="customerMainFragment_noNearShop">No near shop available</string>
+</resources>

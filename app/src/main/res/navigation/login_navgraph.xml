@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navgraph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.utn.nearly.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_newAccountFragment"
+            app:destination="@id/newAccountFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_customerMainActivity"
+            app:destination="@id/customerMainActivity" />
+        <action
+            android:id="@+id/action_loginFragment_to_shopMainActivity"
+            app:destination="@id/shopMainActivity" />
+        <action
+            android:id="@+id/action_loginFragment_to_deliveryMainActivity"
+            app:destination="@id/deliveryMainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.utn.nearly.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_customerMainActivity"
+            app:destination="@id/customerMainActivity"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_shopMainActivity"
+            app:destination="@id/shopMainActivity" />
+        <action
+            android:id="@+id/action_splashFragment_to_deliveryMainActivity"
+            app:destination="@id/deliveryMainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAccountFragment"
+        android:name="com.utn.nearly.fragments.NewAccountFragment"
+        android:label="fragment_new_account"
+        tools:layout="@layout/fragment_new_account" >
+        <action
+            android:id="@+id/action_newAccountFragment_to_newAccountGeolocFragment"
+            app:destination="@id/newAccountGeolocFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/customerMainActivity"
+        android:name="com.utn.nearly.activities.CustomerMainActivity"
+        android:label="activity_costumer_main"
+        tools:layout="@layout/activity_customer_main" />
+    <fragment
+        android:id="@+id/newAccountGeolocFragment"
+        android:name="com.utn.nearly.fragments.NewAccountGeolocFragment"
+        android:label="fragment_new_account_geoloc"
+        tools:layout="@layout/fragment_new_account_geoloc" >
+        <action
+            android:id="@+id/action_newAccountGeolocFragment_to_customerMainActivity"
+            app:destination="@id/customerMainActivity" />
+        <action
+            android:id="@+id/action_newAccountGeolocFragment_to_deliveryMainActivity"
+            app:destination="@id/deliveryMainActivity" />
+        <action
+            android:id="@+id/action_newAccountGeolocFragment_to_newAccountShopDetailFragment"
+            app:destination="@id/newAccountShopDetailFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/deliveryMainActivity"
+        android:name="com.utn.nearly.activities.DeliveryMainActivity"
+        android:label="activity_delivery_main"
+        tools:layout="@layout/activity_delivery_main" />
+    <activity
+        android:id="@+id/shopMainActivity"
+        android:name="com.utn.nearly.activities.ShopMainActivity"
+        android:label="activity_shop_main"
+        tools:layout="@layout/activity_shop_main" />
+    <fragment
+        android:id="@+id/newAccountShopDetailFragment"
+        android:name="com.utn.nearly.fragments.NewAccountShopDetailFragment"
+        android:label="fragment_new_account_shop_detail"
+        tools:layout="@layout/fragment_new_account_shop_detail" >
+        <action
+            android:id="@+id/action_newAccountShopDetailFragment_to_shopMainActivity"
+            app:destination="@id/shopMainActivity" />
+    </fragment>
+</navigation>

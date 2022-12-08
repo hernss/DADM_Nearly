@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop_navgraph"
+    app:startDestination="@id/shopMainFragment">
+
+    <fragment
+        android:id="@+id/shopDetailProductFragment"
+        android:name="com.utn.nearly.fragments.ShopDetailProductFragment"
+        android:label="fragment_shop_detail_product"
+        tools:layout="@layout/fragment_shop_detail_product" >
+        <argument
+            android:name="productID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopMainFragment"
+        android:name="com.utn.nearly.fragments.ShopMainFragment"
+        android:label="fragment_shop_main"
+        tools:layout="@layout/fragment_shop_main" >
+        <action
+            android:id="@+id/action_shopMainFragment_to_shopDetailProductFragment"
+            app:destination="@id/shopDetailProductFragment" />
+        <action
+            android:id="@+id/action_shopMainFragment_to_shopNewProductFragment"
+            app:destination="@id/shopNewProductFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopNewProductFragment"
+        android:name="com.utn.nearly.fragments.ShopNewProductFragment"
+        android:label="fragment_shop_new_product"
+        tools:layout="@layout/fragment_shop_new_product" />
+    <fragment
+        android:id="@+id/shopPedidosFragment"
+        android:name="com.utn.nearly.fragments.ShopPedidosFragment"
+        android:label="fragment_shop_pedidos"
+        tools:layout="@layout/fragment_shop_pedidos" >
+        <action
+            android:id="@+id/action_shopPedidosFragment_to_shopPedidosDetailFragment"
+            app:destination="@id/shopPedidosDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopPedidosDetailFragment"
+        android:name="com.utn.nearly.fragments.ShopPedidosDetailFragment"
+        android:label="fragment_shop_pedidos_detail"
+        tools:layout="@layout/fragment_shop_pedidos_detail" >
+        <argument
+            android:name="pedido"
+            app:argType="com.utn.nearly.entities.Pedido" />
+    </fragment>
+</navigation>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "794911732234",
+    "project_id": "nearly2-6f28e",
+    "storage_bucket": "nearly2-6f28e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794911732234:android:48a7515aabf4763945e5f3",
+        "android_client_info": {
+          "package_name": "com.utn.nearly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794911732234-35blv8g3dkenv1s572256b346gms07lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjOPfzUcGDWdx4k8lCTa3oVyYb675qRPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794911732234-35blv8g3dkenv1s572256b346gms07lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
